@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "00-planejar-laboratorio.md",
+                "file": "01-instalar-ubuntu-server.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "00-planejar-laboratorio"
+              "title": "01-instalar-ubuntu-server"
             }
           }
         ]
@@ -99,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "00-planejar-laboratorio.md",
+                "file": "01-instalar-ubuntu-server.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -118,7 +118,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "00-planejar-laboratorio.md",
+                "file": "01-instalar-ubuntu-server.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
@@ -161,7 +161,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "00-planejar-laboratorio.md",
+                "file": "01-instalar-ubuntu-server.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -189,5 +189,9 @@
     }
   },
   "active": "77c199663ba193e0",
-  "lastOpenFiles": []
+  "lastOpenFiles": [
+    "11-rede-diagnostico.md",
+    "00-planejar-laboratorio.md",
+    "01-instalar-ubuntu-server.md"
+  ]
 }
