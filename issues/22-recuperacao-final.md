@@ -13,9 +13,9 @@ Demonstrar que o servidor pode ser diagnosticado e recuperado usando os runbooks
 - [ ] Criar snapshot VMware antes do teste.
 - [ ] Confirmar backup recente e validar checksum.
 - [ ] Executar checklist de pré-teste: SSH, UFW, Docker, aplicação, timer, disco e logs.
-- [ ] Cenário A: parar a aplicação e diagnosticar pelo alerta/log.
+- [ ] Cenário A: parar a aplicação e diagnosticar pelo alerta/log seguindo `runbooks/monitoring-alerts.md`.
 - [ ] Cenário B: interromper o serviço de heartbeat e recuperar via systemd.
-- [ ] Cenário C: restaurar os dados de aplicação a partir do backup em um caminho isolado e validar integridade.
+- [ ] Cenário C: restaurar `/srv/lab-data/app` a partir do backup recente da Issue #20 em um caminho isolado e validar a integridade sem sobrescrever os dados em uso.
 - [ ] Cenário D: simular regra UFW incorreta apenas com console aberto; recuperar acesso sem reinstalar a VM.
 - [ ] Registrar timeline, comandos, evidências, causa e resultado de cada cenário.
 - [ ] Reverter todas as falhas induzidas e confirmar estado saudável.

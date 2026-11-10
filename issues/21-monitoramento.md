@@ -18,6 +18,7 @@ Criar verificações periódicas para disponibilidade da aplicação e saúde b�
 - [ ] Agendar a verificação com systemd timer.
 - [ ] Simular aplicação parada e confirmar que a verificação detecta a falha.
 - [ ] Definir como consultar histórico e diferenciar alerta de incidente.
+- [ ] Criar `runbooks/monitoring-alerts.md` com o procedimento para investigar alertas de aplicação/contêiner, disco e memória, incluindo consulta ao histórico, evidências e critérios para considerar o serviço recuperado.
 - [ ] Documentar limitações: isso é monitoramento local, não um sistema externo de alertas.
 
 ## Conceitos que você deve compreender
@@ -29,6 +30,7 @@ Métrica, disponibilidade, health check, threshold, observabilidade, monitoramen
 - [ ] Limite de disco é configurável.
 - [ ] Timer executa automaticamente.
 - [ ] Runbook explica como investigar cada alerta.
+- [ ] `runbooks/monitoring-alerts.md` cobre os sinais definidos e os comandos para verificar o estado após a correção.
 
 ## Evidências
 Saída de uma execução saudável e outra com falha controlada; logs do timer.

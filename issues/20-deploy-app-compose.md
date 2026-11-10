@@ -12,6 +12,7 @@ Implantar uma aplicação HTTP simples via Docker Compose, acessível pela rede 
 ## Tarefas
 - [ ] Escolher uma aplicação de demonstração pequena e mantida (por exemplo, uma aplicação estática Nginx com página própria).
 - [ ] Criar diretório `/opt/lab/app`.
+- [ ] Guardar o conteúdo persistente da aplicação em `/srv/lab-data/app` e montar esse caminho no container; manter a configuração Compose em `/opt/lab/app`.
 - [ ] Criar `compose.yaml` versionado no repositório.
 - [ ] Usar imagem oficial e tag explícita, evitando `latest` no deploy documentado.
 - [ ] Configurar bind address/porta publicada de forma consciente.
@@ -21,6 +22,7 @@ Implantar uma aplicação HTTP simples via Docker Compose, acessível pela rede 
 - [ ] Validar localmente com `curl` e, se a regra UFW permitir, a partir do Windows.
 - [ ] Consultar logs e estado com Docker Compose.
 - [ ] Alterar conteúdo, recriar container e provar que dados persistentes permanecem.
+- [ ] Atualizar o escopo do backup criado na Issue #16 para incluir `/srv/lab-data/app`, executar um novo backup e validar a restauração desse conteúdo em um caminho isolado.
 - [ ] Reiniciar a VM e validar recuperação automática.
 - [ ] Documentar deploy, atualização, rollback e remoção.
 
@@ -31,6 +33,7 @@ Compose, declarative configuration, port publishing, volume, restart policy, hea
 - [ ] Aplicação responde por HTTP.
 - [ ] Configuração está versionada sem segredos.
 - [ ] Dados persistem após recriação do container.
+- [ ] Um backup recente inclui o conteúdo persistente da aplicação e esse conteúdo pode ser restaurado em caminho isolado.
 - [ ] Serviço volta após reboot.
 - [ ] Procedimento de atualização e rollback documentado.
 

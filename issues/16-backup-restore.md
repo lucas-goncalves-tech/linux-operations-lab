@@ -10,7 +10,7 @@ Backup só é confiável quando a restauração foi testada. Um arquivo compacta
 Criar backup dos dados de laboratório, validar integridade e restaurar em um diretório separado.
 
 ## Tarefas
-- [ ] Definir escopo: incluir `/srv/lab-data` e documentação/configurações próprias necessárias; excluir caches e dados temporários.
+- [ ] Definir escopo: incluir `/srv/lab-data` (inclusive subdiretórios de aplicações que forem adicionados depois) e documentação/configurações próprias necessárias; excluir caches e dados temporários.
 - [ ] Definir destino no disco adicional montado na Issue #13.
 - [ ] Criar script de backup com `tar` ou `rsync`, timestamp e log.
 - [ ] Garantir que falhas retornem código diferente de zero.
@@ -20,6 +20,8 @@ Criar backup dos dados de laboratório, validar integridade e restaurar em um di
 - [ ] Restaurar para `/tmp/restore-test` ou outro diretório isolado, nunca sobrescrever a origem.
 - [ ] Comparar conteúdo e checksum.
 - [ ] Documentar política de retenção, frequência, escopo e procedimento de restauração.
+
+> Quando uma issue posterior adicionar dados persistentes ao laboratório, atualize o escopo do backup e execute um novo backup antes de depender dele para recuperação.
 
 ## Conceitos que você deve compreender
 RPO, RTO, backup full, retenção, checksum, consistência, restore e cópia fora do host.
