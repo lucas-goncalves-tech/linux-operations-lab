@@ -1,6 +1,21 @@
 # Compiled class file
 *.class
 
+# Java build output
+target/
+build/
+out/
+bin/
+*.jmod
+*.hprof
+*.jfr
+
+# Gradle local state
+.gradle/
+
+# Maven local state (keep .mvn/wrapper and Maven Wrapper files versioned)
+dependency-reduced-pom.xml
+
 # Log file
 *.log
 
@@ -10,15 +25,59 @@
 # Mobile Tools for Java (J2ME)
 .mtj.tmp/
 
-# Package Files #
+# Package files
 *.jar
-*.war
-*.nar
-*.ear
+!mvnw
+!mvnw.cmd
 *.zip
 *.tar.gz
 *.rar
 
+# IDE and editor files
+.idea/
+*.iml
+.project
+.classpath
+.settings/
+.factorypath
+.metadata/
+.DS_Store
+Thumbs.db
+
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
 replay_pid*
+
+# Spring/local environment secrets and credentials
+.env*
+!.env.example
+application-local.properties
+application-local.yml
+application-local.yaml
+**/secrets/
+**/.secrets/
+
+# Terraform state, provider downloads, and local variable files
+.terraform/
+*.tfstate
+*.tfstate.*
+*.tfvars
+*.tfvars.json
+!*.tfvars.example
+crash.log
+crash.*.log
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Ansible local artifacts
+*.retry
+vault-password*
+
+# Python artifacts for DevOps automation
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
